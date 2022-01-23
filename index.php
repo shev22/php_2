@@ -89,14 +89,18 @@ echo "</br><hr><?br>";
 function RemoveEvenNumbers(int $num)
 {
     $new_num = str_split($num);
-    foreach ($new_num as $key => $value) {
-        if ($value % 2 == 0) {
-            $new_num[$key] = 0;
+    $count = count($new_num);
+    $count;
+    
+   for ($i = 0; $i <$count;  $i++){
+        if($new_num[$i]%2 ==0){
+            $new_num[$i]=0;
         }
-    }
-    return (int)(implode($new_num));
+   }
+    return (implode ($new_num));
 }
-echo  RemoveEvenNumbers(123456789);
+echo  RemoveEvenNumbers(2222);
+
 
 "EX9";
 
@@ -117,23 +121,15 @@ while (true) {
 echo ($num . ' is less than 50' . "<br>");
 echo ('Total iterations is ' . $count . "<br>");
 
-
-for ($num = 1000, $i = 0; $num >= 50; $num / 2, $i++) {
-    $num /= 2;
-    echo ('number is ' . $num . "<br>");
-}
-echo ($num . ' is less than 50' . "<br>");
-echo ('Total iterations is ' . $i . "<br>");
-
-
 echo "</br><hr><?br>";
 
 "EX10";
 
 
-for ($i=1; $i<=7; $i++)	{
-  for($j = 1; $j <= 14; $j++){
-    echo "*";
-  }
-  echo "</br>";
+for ($i = 1; $i <= 7; $i++) {
+    for ($j = 1; $j <= 7; $j++) {
+        echo "*";
+    }
+    echo "</br>";
 }
+
